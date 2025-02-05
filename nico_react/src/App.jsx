@@ -8,13 +8,16 @@ import { Products_Componente } from './Componentes/products/Products_Componente'
 import "bootstrap-icons/font/bootstrap-icons.css"
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>     
+    <> 
+    <section>
       <Navbar_Componente/>
       <Products_Componente/>
-      <Footer_Componente/>
+      <Footer_Componente/>  
+    </section>    
+      
       
     </>
   )
