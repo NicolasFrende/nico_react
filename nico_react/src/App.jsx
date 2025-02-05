@@ -12,8 +12,9 @@ function App() {
   return (
     <>     
       <Navbar_Componente/>
-      <Footer_Componente/>
       <Products_Componente/>
+      <Footer_Componente/>
+      
     </>
   )
 }
