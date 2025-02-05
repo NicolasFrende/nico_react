@@ -2,9 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Navbar_Componente } from './assets/Componentes/Navbar_Componente'
-import { Footer_Componente } from './assets/Componentes/Footer_Componente'
-import { Products_Componente } from './assets/Componentes/Products_Componente'
+import { Navbar_Componente } from './assets/Componentes/navbar/Navbar_Componente'
+import { Footer_Componente } from './assets/Componentes/footer/Footer_Componente'
+import { Products_Componente } from './assets/Componentes/products/Products_Componente'
 
 function App() {
   const [count, setCount] = useState(0)
