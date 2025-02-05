@@ -6,7 +6,7 @@ export const Products_Componente = () => {
         
         <>
         
-        <div className="galeria_productos">
+        <div id='products' className="galeria_productos">
             <div className="Producto">
                     <div className="producto_imagen">
                         <img className='logo_prod' src={ATR_MP_Logo_Color_Bccc}></img>

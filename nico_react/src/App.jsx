@@ -2,10 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import "bootstrap-icons/font/bootstrap-icons.css"
 import { Navbar_Componente } from './Componentes/navbar/Navbar_Componente'
 import { Footer_Componente } from './Componentes/footer/Footer_Componente'
 import { Products_Componente } from './Componentes/products/Products_Componente'
-import "bootstrap-icons/font/bootstrap-icons.css"
+import { About_Componente } from './Componentes/about/About_componente'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
     <section>
       <Navbar_Componente/>
       <Products_Componente/>
+      <About_Componente/>
       <Footer_Componente/>  
     </section>    
       

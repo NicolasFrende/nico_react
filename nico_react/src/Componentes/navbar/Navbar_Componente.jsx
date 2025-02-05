@@ -14,8 +14,8 @@ export const Navbar_Componente = () => {
 
         <div className="nav-links">
           <a href="/">Home</a>
-          <a href="/products">Products</a>
-          <a href="/about">About</a>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
         </div>
 
         <div className="cart-icon">
