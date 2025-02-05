@@ -9,6 +9,7 @@
     background-color: rgb(226, 226, 226);
   }
   
+
   .Producto {
     background-color: #ffffff;
     border-radius: 8px;
@@ -61,3 +62,4 @@
   .boton_ADDcarrito:hover {
     transform: translateY(-5px);
   }
+   
