@@ -5,7 +5,7 @@ import logo_nico from "../../assets/images/logo_nico.png";
 export const About_Componente = () => {
   return (
     <>
-      <div className="baner">
+      <div id="about" className="baner">
         <div className="texto_info">
           <div>
             <img className="nico" src={logo_nico}></img>

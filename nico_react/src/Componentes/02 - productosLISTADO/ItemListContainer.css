@@ -1,0 +1,19 @@
+.galeria_productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgb(226, 226, 226);
+  }
+.saludo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(226, 226, 226);
+}

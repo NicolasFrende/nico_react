@@ -5,17 +5,18 @@ import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Navbar_Componente } from "./Componentes/01 - navbar/Navbar_Componente";
 import { Footer_Componente } from "./Componentes/04- footer/Footer_Componente";
-import { Products_Componente } from "./Componentes/02  - products/Products_Componente";
 import { About_Componente } from "./Componentes/03 - about/About_componente";
+import { ItemListContainer } from "./Componentes/02 - productosLISTADO/ItemListContainer";
 
 function App() {
   return (
     <>
       <section>
         <Navbar_Componente />
-        <Products_Componente />
+        <ItemListContainer greeting="Bienvenido al mejor lugar para ser rapido en Iracing"/>
         <About_Componente />
         <Footer_Componente />
+        
       </section>
     </>
   );
