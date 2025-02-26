@@ -1,4 +1,4 @@
-import './Footer_componente.css'
+import './FooterComponente.css'
 import { Instagram, Facebook, Whatsapp, Envelope } from 'react-bootstrap-icons'
 export const Footer_Componente = () => {
     return (

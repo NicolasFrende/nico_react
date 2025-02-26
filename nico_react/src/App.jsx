@@ -3,9 +3,9 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Navbar_Componente } from "./Componentes/01 - navbar/Navbar_Componente";
-import { Footer_Componente } from "./Componentes/04- footer/Footer_Componente";
-import { About_Componente } from "./Componentes/03 - about/About_componente";
+import { Navbar_Componente } from "./Componentes/01 - navbar/NavbarComponente";
+import { Footer_Componente } from "./Componentes/04- footer/FooterComponente";
+import { About_Componente } from "./Componentes/03 - about/AboutComponente";
 import { ItemListContainer } from "./Componentes/02 - productosLISTADO/ItemListContainer";
 
 function App() {

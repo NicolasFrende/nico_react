@@ -1,4 +1,4 @@
-import "./About_componente.css";
+import "./AboutComponente.css";
 import fotonico_atr from "../../assets/images/fotonico_atr.png";
 import logo_nico from "../../assets/images/logo_nico.png";
 

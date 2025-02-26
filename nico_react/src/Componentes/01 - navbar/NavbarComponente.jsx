@@ -1,4 +1,4 @@
-import "./Navbar_componente.css";
+import "./NavbarComponente.css";
 
 import logo_nico from "../../assets/images/logo_nico.png";
 import { Cart4 } from "react-bootstrap-icons";
