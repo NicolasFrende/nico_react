@@ -1,6 +1,7 @@
 import "./Producto1.css";
 import Button from "@material-ui/core/Button";
 import ATR_MP_Logo_Color_Bccc from "../../assets/images/ATR_MP_Logo_Color_Bccc.png";
+import { Link } from "react-router";
 
 export const Producto1 = ({week}) => {
   
@@ -13,6 +14,15 @@ export const Producto1 = ({week}) => {
       Porsche 992 Set Up - Season 1 2025 week {week}
       </div>
       <div className="producto_precio"> 10 $</div>
+      <Link to={`/Producto-1-Detail/${week}`}>
+      <div className="boton_VERMAS">
+        <Button
+        variant="contained"
+        color="secondary"
+        
+        > Ver mas</Button>
+      </div>
+      </Link>
       <div className="boton_ADDcarrito">
         <Button
           variant="contained"
@@ -24,6 +34,8 @@ export const Producto1 = ({week}) => {
           add to cart
         </Button>
       </div>
-    </div>
+      
+      </div>
+    
   );
 };

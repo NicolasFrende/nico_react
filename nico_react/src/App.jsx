@@ -7,41 +7,39 @@ import { Navbar_Componente } from "./Componentes/01 - navbar/NavbarComponente";
 import { Footer_Componente } from "./Componentes/04- footer/FooterComponente";
 import { About_Componente } from "./Componentes/03 - about/AboutComponente";
 import { ItemListContainer } from "./Componentes/02 - productosLISTADO/ItemListContainer";
+import { Cart } from "./Componentes/01b - cartwidget/Cart_test"
+import { Detail_Producto1 } from "./Componentes/02c - ItemDetailContainer/DetailProducto1";
+import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
   return (
     <>
       <section>
+      <BrowserRouter>
         <Navbar_Componente />
-        <ItemListContainer greeting="Bienvenido al mejor lugar para ser rapido en Iracing"/>
+        <Routes>
+          <Route path="/" element={<ItemListContainer greeting="Bienvenido al mejor lugar para ser rapido en Iracing"/> }/>
+          <Route path="/category/:time" element={<ItemListContainer /> }/>
+          <Route path="/cart" element={<Cart />}/>
+          <Route path="/Producto-1-Detail/:week" element={<Detail_Producto1 />}/>
+          <Route path="*" element={<h2>404 Not found</h2>} />
+        </Routes>
         <About_Componente />
         <Footer_Componente />
-        
+      </BrowserRouter>
       </section>
+
+       
+
+
+
+
+
+      
     </>
   );
 }
 
 export default App;
 
-/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    */
+

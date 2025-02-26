@@ -1,4 +1,4 @@
-import "./CartWidget";
+import "./CartWidget.css";
 import { BsCart4 } from "react-icons/bs"
 
 export const CartWidget = () => {
@@ -6,7 +6,7 @@ export const CartWidget = () => {
     <>
       <div className="Contenedor_Carro">
         <div className="carrito">
-          <BsCart4 /> 2
+          <BsCart4 />          2
         </div>
       </div>
     </>
