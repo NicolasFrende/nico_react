@@ -7,8 +7,10 @@ import { Navbar_Componente } from "./Componentes/01 - navbar/NavbarComponente";
 import { Footer_Componente } from "./Componentes/04- footer/FooterComponente";
 import { About_Componente } from "./Componentes/03 - about/AboutComponente";
 import { ItemListContainer } from "./Componentes/02 - productosLISTADO/ItemListContainer";
+import {ListadoCompletoNOfiltro} from "./Componentes/02 - productosLISTADO/ListadoCompletoNOfiltro"
 import { Cart } from "./Componentes/01b - cartwidget/Cart_test"
 import { Detail_Producto1 } from "./Componentes/02c - ItemDetailContainer/DetailProducto1";
+import { Detail_Producto2 } from "./Componentes/02c - ItemDetailContainer/DetailProducto2";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
@@ -18,10 +20,11 @@ function App() {
       <BrowserRouter>
         <Navbar_Componente />
         <Routes>
-          <Route path="/" element={<ItemListContainer greeting="Bienvenido al mejor lugar para ser rapido en Iracing"/> }/>
+          <Route path="/" element={<ListadoCompletoNOfiltro greeting="Bienvenido al mejor lugar para ser rapido en Iracing"/> }/>
           <Route path="/category/:time" element={<ItemListContainer /> }/>
           <Route path="/cart" element={<Cart />}/>
           <Route path="/Producto-1-Detail/:week" element={<Detail_Producto1 />}/>
+          <Route path="/Producto-2-Detail/:season" element={<Detail_Producto2 />}/>
           <Route path="*" element={<h2>404 Not found</h2>} />
         </Routes>
         <About_Componente />

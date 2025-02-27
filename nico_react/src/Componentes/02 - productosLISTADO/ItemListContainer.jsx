@@ -4,35 +4,90 @@ import { useParams } from "react-router";
 import "./ItemListContainer.css";
 
 export const ItemListContainer = ({ greeting }) => {
+  const products = [
+    {
+      class: <Producto1 week="1" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="2" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="3" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="4" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="5" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="6" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="7" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="8" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="9" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="10" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="11" />,
+      category: "week",
+    },
+    {
+      class: <Producto1 week="12" />,
+      category: "week",
+    },
+    {
+      class: <Producto2 season="1" />,
+      category: "season",
+    },
+    {
+      class: <Producto2 season="2" />,
+      category: "season",
+    },
+    {
+      class: <Producto2 season="3" />,
+      category: "season",
+    },
+    {
+      class: <Producto2 season="4" />,
+      category: "season",
+    },
+  ]
+
 
   const {time} = useParams();
-  console.log(time)
-
+    return (
+      <>
+        <div id="products" className="galeria_productos">
+        
+          {products.map((product) => (
+            product.category === time
+              ? <div>{product.class}</div>
+              : null
+          ))}
+          
+        </div>
+      </>
+    );
+  }
   
-  
 
-  return (
-    <>
-      <div id="welcome" className="saludo">{greeting}</div>
-      <div id="products" className="galeria_productos">
-        <Producto1 week="1" />
-        <Producto1 week="2" />
-        <Producto1 week="3" />
-        <Producto1 week="4" />
-        <Producto1 week="5" />
-        <Producto1 week="6" />
-        <Producto1 week="7" />
-        <Producto1 week="8" />
-        <Producto1 week="9" />
-        <Producto1 week="10" />
-        <Producto1 week="11" />
-        <Producto1 week="12" />
-        <Producto2 season="1" />
-        <Producto2 season="2" />
-        <Producto2 season="3" />
-        <Producto2 season="4" />
 
-      </div>
-    </>
-  );
-};
+

@@ -11,7 +11,7 @@ export const Producto1 = ({week}) => {
         <img className="logo_prod" src={ATR_MP_Logo_Color_Bccc}></img>
       </div>
       <div className="producto_texto">
-      Porsche 992 Set Up - Season 1 2025 week {week}
+      Porsche GT3 992 Set Up - Season 1 2025 week {week}
       </div>
       <div className="producto_precio"> 10 $</div>
       <Link to={`/Producto-1-Detail/${week}`}>

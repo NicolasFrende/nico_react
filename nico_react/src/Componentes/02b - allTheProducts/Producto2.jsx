@@ -1,6 +1,7 @@
 import "./Producto2.css";
 import Button from "@material-ui/core/Button";
 import ATR_MP_Logo_Color_Bccc from "../../assets/images/ATR_MP_Logo_Color_Bccc.png";
+import { Link } from "react-router";
 
 export const Producto2 = ({season}) => {
   
@@ -10,18 +11,20 @@ export const Producto2 = ({season}) => {
         <img className="logo_prod" src={ATR_MP_Logo_Color_Bccc}></img>
       </div>
       <div className="producto_texto">
-      Porsche 992 All Set Ups - Season {season} 2025 
+      Porsche GT3 992 All Set Ups - Season {season} 2025 
       </div>
-      <div className="producto_precio"> 100 $</div>
-      <div className="boton_VERMAS">
+      <div className="producto_precio"> 150 $</div>
+      
+        <Link to={`/Producto-2-Detail/${season}`}>
+        <div className="boton_VERMAS">
         <Button
         variant="contained"
         color="secondary"
-        onClick={() => {
-          alert("esto es una prueba para ver mas del producto 2");
-        }}
+        
         > Ver mas </Button>
       </div>
+        </Link>
+        
       <div className="boton_ADDcarrito">
         <Button
           variant="contained"
